@@ -1,0 +1,39 @@
+{
+  "name": "shingeki-nk",
+  "displayName": "Shingeki_nK",
+  "description": "Generador de proyectos de software via Shingeki_nK CLI",
+  "version": "0.0.1",
+  "publisher": "chuckgt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<tu-usuario>/<tu-repo>"
+  },
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "extensionDependencies": [],
+  "extensionPack": [],
+
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "shingeki-nk.init",
+        "title": "Shingeki_nK: Init proyecto"
+      },
+      {
+        "command": "shingeki-nk.build",
+        "title": "Shingeki_nK: Build .scf"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
