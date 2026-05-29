@@ -15,5 +15,5 @@ npm run compile
 vsce package
 
 # 6. Publicar (necesitas hacer vsce login primero)
-vsce login chuckgt
+vsce login <usuario>
 vsce publish
